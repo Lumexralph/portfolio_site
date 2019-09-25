@@ -1,61 +1,60 @@
 # portfolio filter list
 list:
-  - title : "UI/UX Design"
-    type : "design"
+  - title : "Go"
+    type : "Go"
     
-  - title : "BRANDING"
-    type : "branding"
+  - title : "Python"
+    type : "Python"
     
-  - title : ILLUSTRATION"
-    type : "illustration"
+  - title : "Javascript"
+    type : "javascript"
 
 # portfolio item
 item:
   - image : "images/portfolio/item-1.png"
     projectURL : "#"
     projectType:
-      - type: "design"
-      - type: "illustration"
+      - type: "javascript"
       
   - image : "images/portfolio/item-2.png"
     projectURL : "#"
     projectType:
-      - type: "branding"
+      - type: "python"
       
   - image : "images/portfolio/item-3.png"
     projectURL : "#"
     projectType:
-      - type: "illustration"
+      - type: "python"
       
   - image : "images/portfolio/item-6.png"
     projectURL : "#"
     projectType:
-      - type: "design"
-      - type: "branding"
+      - type: "python"
+      - type: "javascript"
       
   - image : "images/portfolio/item-8.png"
     projectURL : "#"
     projectType:
-      - type: "illustration"
+      - type: "Go"
       
   - image : "images/portfolio/item-5.png"
     projectURL : "#"
     projectType:
-      - type: "design"
+      - type: "Go"
       
   - image : "images/portfolio/item-1.png"
     projectURL : "#"
     projectType:
-      - type: "branding"
+      - type: "javascript"
       
   - image : "images/portfolio/item-3.png"
     projectURL : "#"
     projectType:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
+      - type: "Go"
+      - type: "Python"
+      - type: "javascript"
       
   - image : "images/portfolio/item-7.png"
     projectURL : "#"
     projectType:
-      - type: "illustration"
+      - type: "Python"
