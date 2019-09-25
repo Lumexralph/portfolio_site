@@ -1,23 +1,20 @@
 # banner
 banner:
-  title : "Hi! I’m <br> Christoher <br> UX designer"
+  title : "Hi! I’m <br> Olumide <br> Software Engineer"
   socialLinks:
-    - icon : "ti-facebook"
-      URL : "#"
+    - icon : "ti-linkedin"
+      URL : "https://linkedin.com/in/ogundeleolumide/"
       
-    - icon : "ti-instagram"
-      URL : "#"
-      
-    - icon : "ti-dribbble"
-      URL : "#"
+    - icon : "ti-github"
+      URL : "https://github.com/Lumexralph"
       
     - icon : "ti-twitter"
-      URL : "#"
+      URL : "https://github.com/Lumexralph"
 
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "I quit my job and career in Logistics and Supply Chain Management to start allover again to be a Software Engineer. I love Distributed Systems, Site Reliability Engineering with the application of Machine Learning."
   button:
     btnText : "know more"
     URL : "/about"
@@ -26,20 +23,55 @@ about:
 skill:
   enable : true
   skillbar:
-    - title : "Web Design"
-      progress : "90%"
+  # programming languages
+    - title : "Python"
+      progress : "75%"
       color : "#fdb157"
       
-    - title : "Logo Design"
-      progress : "60%"
+    - title : "Javascript"
+      progress : "80%"
       color : "#9473e6"
       
-    - title : "After Effects"
-      progress : "80%"
+    - title : "Go"
+      progress : "70%"
       color : "#bdecf6"
       
-    - title : "Web App"
+    - title : "Rust"
+      progress : "30%"
+      color : "#ffbcaa"
+
+  # concepts
+    - title : "Unix/Linux Systems"
+      progress : "50%"
+      color : "#fdb157"
+    
+    - title: "Algorithms and Data Structures"
+      progress: "60%"
+      color : "#ffbcaa"
+
+    - title: "Microservices"
+      progress: "60%"
+      color : "#ffbcaa"
+
+    - title: "Networks Fundamentals"
+      progress: "70%"
+      color : "#ffbcaa"
+
+  # Database Systems
+    - title : "PostgreSQL/MySQL"
       progress : "70%"
+      color : "#fdb157"
+    
+    - title: "MongoDB"
+      progress: "85%"
+      color : "#ffbcaa"
+
+    - title: "Redis"
+      progress: "60%"
+      color : "#ffbcaa"
+
+    - title: "SQL"
+      progress: "65%"
       color : "#ffbcaa"
 
 # experience
@@ -47,64 +79,65 @@ experience:
   enable : true
   item: 
     - logo : "images/experience/icon-1.png"
-      title : "Junior UX Designer"
-      company : "WEBEX"
-      duration : "Jan 2007 - Feb 2009"
+      title : "Software Engineer"
+      company : "Conectar LLC, Russia(Moscow)"
+      duration : "April - May 2019"
       
     - logo : "images/experience/icon-2.png"
-      title : "UX & UI Designer"
-      company : "AUGMEDIX"
-      duration : "Mar 2009 - Aug 2014"
+      title : "Technical Coordinator"
+      company : "Lifestores Pharmacy, Nigeria(Lagos)"
+      duration : "May 2019 - Present"
       
     - logo : "images/experience/icon-1.png"
-      title : "Senior UI Designer"
-      company : "THEMEFISHER"
-      duration : "Sep 2014 - Present"
+      title : "Software Engineer"
+      company : "Andela"
+      duration : "July 2018 - Present"
 
 # education
 education:
   enable : true
   item:
-    - title : "Marters in UX Design"
-      year : "2006"
-      academy : "Masassusets Institute of Technology"
+    - title : "LifeLong Learner"
+      year : "Infinity"
+      academy : "Internet of Learning"
       
-    - title : "Honours in Fine Arts"
-      year : "2004"
-      academy : "Harvard University"
+    - title : "Computer Systems Networking and Telecommunications"
+      year : "2013"
+      academy : "Cisco Networking Academy (NIIT)"
       
-    - title : "Higher Secondary Certificat"
-      year : "2000"
-      academy : "Cardiff School"
+    - title : "Non-Relational Database"
+      year : "2017"
+      academy : "MongDB University"
       
-    - title : "Secondary School Certificate"
-      year : "1998"
-      academy : "Cardiff School"
+    - title : "Bachelors Degree (Soil Science)"
+      year : "2013"
+      academy : "Obafemi Awolowo University"
 
 # service
 service:
   enable : true
   item : 
-    - title : "UI Design"
+    - title : "Frontend Development"
       icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
-
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content : "I help build User Interface of projects using Frontend technologies - React, Redux, SASS, CSS Libraries etc."
       highlighted : true
 
-    - title : "Interaction Design"
+    - title : "Backend Development"
+      icon : "ti-vector"
+      content : "I help build the business logic and APIs with clean architecture - REST/GraphQL API, Microservices"
+      highlighted : true
+
+    - title : "OSS"
       icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
+      content : "I love the idea of open source projects and always looking for exciting projects to learn from and contribute to."
+      highlighted : true
 
 # portfolio
 portfolio:
   enable : true
   item:
     - image : "images/portfolio/item-1.png"
+      title: "project 1"
       projectURL : "#"
       
     - image : "images/portfolio/item-2.png"
@@ -121,7 +154,7 @@ portfolio:
 
 # testimonial
 testimonial:
-  enable : true
+  enable : false
   item:
     - name : "Jesica Gomez"
       image : "images/testimonial/client-1.png"
@@ -140,7 +173,7 @@ testimonial:
 
 # client slider
 clientSlider:
-  enable : true
+  enable : false
   item:
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "#"

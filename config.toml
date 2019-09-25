@@ -1,6 +1,6 @@
 baseURL = "https://lumexralph.github.io./"
 languageCode = "en-us"
-title = "Kross | Hugo Portfolio Template"
+title = "Olumide | Lumex Portfolio"
 theme = "kross-hugo-portfolio-template"
 summaryLength = "10"
 publishDir = "lumexralph.github.io"
@@ -52,7 +52,7 @@ publishDir = "lumexralph.github.io"
 
 
 [params]
-logo = "images/logo.png"
+logo = "images/logo_4.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
@@ -69,6 +69,6 @@ googleAnalitycsID = "Your ID"
   formAction = "#" #contact form works with formspree.io
 
   [params.footer]
-  email = "steve.fruits@email.com"
-  phone = "+880 2544 658 256"
-  address = "125/A, CA Commercial Area, California, USA"
+  email = "olumideralph@gmail.com"
+  phone = "+234 8066 534 548"
+  address = "Lagos, Nigeria"
