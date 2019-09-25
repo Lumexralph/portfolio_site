@@ -137,20 +137,24 @@ portfolio:
   enable : true
   item:
     - image : "images/portfolio/item-1.png"
-      title: "project 1"
+      title: "Go systems programming"
       projectURL : "#"
       
     - image : "images/portfolio/item-2.png"
+      title: "Go systems programming"
       projectURL : "#"
       
     - image : "images/portfolio/item-3.png"
+      title: "Go systems programming"
       projectURL : "#"
       
     - image : "images/portfolio/item-4.png"
+      title: "Go systems programming"
       projectURL : "#"
       
     - image : "images/portfolio/item-5.png"
       projectURL : "#"
+      title: "Go systems programming"
 
 # testimonial
 testimonial:
