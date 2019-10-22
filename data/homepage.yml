@@ -134,7 +134,7 @@ service:
 
 # portfolio
 portfolio:
-  enable : true
+  enable : false
   item:
     - image : "images/portfolio/item-1.png"
       title: "Go systems programming"

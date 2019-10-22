@@ -3,7 +3,7 @@ title: "My Journey Into Software Development"
 date: 2019-10-07
 image: "images/blog/post-2.jpg"
 description: "This is meta description."
-author: "Themefisher"
+author: "Olumide Ogundele"
 type: "post"
 ---
 Amazon typo
