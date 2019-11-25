@@ -867,3 +867,8 @@ blockquote {
 .filter-controls li.active {
   font-weight: 700
 }
+
+/* ercism-logo */
+.exercism-logo {
+  background: black;
+}
