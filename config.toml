@@ -55,7 +55,7 @@ publishDir = "lumexralph.github.io"
 logo = "images/logo_2.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = ""
 author = "Olumide Ogundele"
 # Google Analitycs
 googleAnalitycsID = "UA-156681647-1"
