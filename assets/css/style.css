@@ -45,14 +45,6 @@ h1,
   font-size: 80px
 }
 
-@media(max-width:991px) {
-
-  h1,
-  .h1 {
-    font-size: 65px
-  }
-}
-
 h2,
 .h2 {
   font-size: 60px
@@ -84,6 +76,31 @@ h5,
 h6,
 .h6 {
   font-size: 14px
+}
+
+@media(max-width:991px) {
+
+  h1,
+  .h1 {
+    font-size: 43px
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 0rem!important;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h3, .h3 {
+    font-size: 26px;
+  }
 }
 
 .btn {
