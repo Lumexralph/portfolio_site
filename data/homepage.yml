@@ -25,15 +25,15 @@ skill:
   skillbar:
   # programming languages
     - title : "Python"
-      progress : "75%"
+      progress : "85%"
       color : "#fdb157"
       
     - title : "Javascript"
-      progress : "80%"
+      progress : "85%"
       color : "#9473e6"
       
     - title : "Go"
-      progress : "70%"
+      progress : "80%"
       color : "#bdecf6"
       
     - title : "Rust"
@@ -80,12 +80,12 @@ experience:
   item: 
     - logo : "images/experience/icon-1.png"
       title : "Software Engineer"
-      company : "Conectar LLC, Russia(Moscow)"
+      company : "Conectar LLC, Russia (Moscow)"
       duration : "April - May 2019"
       
     - logo : "images/experience/icon-2.png"
-      title : "Technical Coordinator"
-      company : "Lifestores Pharmacy, Nigeria(Lagos)"
+      title : "Software Team Coordinator"
+      company : "Lifestores Pharmacy (Lagos)"
       duration : "May 2019 - Present"
       
     - logo : "images/experience/icon-1.png"
@@ -165,15 +165,6 @@ testimonial:
       designation : "CEO, Funder"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       
-    - name : "Shirley Scot"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      
-    - name : "Jessica Julie"
-      image : "images/testimonial/client-1.png"
-      designation : "CEO, Funder"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 # client slider
 clientSlider:

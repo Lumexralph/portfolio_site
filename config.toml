@@ -58,7 +58,7 @@ home = "Home"
 description = "This is meta description"
 author = "Olumide Ogundele"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-156681647-1"
 
   # Preloader
   [params.preloader]
@@ -70,5 +70,4 @@ googleAnalitycsID = "Your ID"
 
   [params.footer]
   email = "olumideralph@gmail.com"
-  phone = "+234 8066 534 548"
   address = "Lagos, Nigeria"

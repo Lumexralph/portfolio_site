@@ -20,12 +20,13 @@ body {
   color: #4c4c4c
 }
 
-p {
+p, ul, ol {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 15px;
+  font-size: 21px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  letter-spacing: -0.004em;
 }
 
 h1,
@@ -420,7 +421,7 @@ textarea.form-control {
 
 .navigation.nav-bg {
   background-color: #41228e;
-  padding: 15px 100px
+  padding: 0px 100px
 }
 
 @media(max-width:991px) {
@@ -439,7 +440,8 @@ textarea.form-control {
 .navbar .nav-item .nav-link {
   font-family: bwnistaint-xbd;
   text-transform: uppercase;
-  padding: 15px
+  padding: 15px;
+  font-size: 15px;
 }
 
 .navbar .nav-item.active {
@@ -739,7 +741,7 @@ blockquote {
 
 .content strong {
   font-family: playfair display, serif;
-  font-size: 22px;
+  font-size: 2em;
   font-weight: 400;
   color: #000;
   display: inherit;
