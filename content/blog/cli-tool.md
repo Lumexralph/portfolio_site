@@ -7,9 +7,9 @@ author: "Olumide Ogundele"
 type: "post"
 ---
 
-I have always loved how Unix/Linux tools work when using them in the terminal. This always makes me want to try out how building it will look, I had reasons to build a CLI tool with Python which I used to start up any project with Git initialized some time ago [ws](https://github.com/Lumexralph/wset), it doesn't do much. Recently, I got the inspiration to build a multipurpose unit-converter CLI tool taking the inspiration from Google's unit converter <put a picture of it>, I had to move away from my terminal often to do some conversions and I thought if I had a tool that will avoid leaving the terminal and maintain my focus, this led to creating uconv - style it, make it bold.
+I have always loved how Unix/Linux tools work when using them in the terminal. I had reasons to build a CLI tool with Python which I used to start up any project with Git initialized some time ago [ws](https://github.com/Lumexralph/wset), it doesn't do much. Recently, I got the inspiration to build a multipurpose unit-converter CLI tool taking the inspiration from Google's unit converter, I had to move away from my terminal often to do some conversions and I thought if I had a tool that will avoid leaving the terminal and maintain my focus, this led to creating `uconv `.
 
->   A command-line interface (CLI) processes commands to a computer program in the form of lines of text. The program which handles the interface is called a command-line interpreter or command-line processor. Operating systems implement a command-line interface in a shell for interactive access to operating system functions or services. Such access was primarily provided to users by computer terminals starting in the mid-1960s, and continued to be used throughout the 1970s and 1980s on VAX/VMS, Unix systems and personal computer systems including DOS, CP/M and Apple DOS.
+>A command-line interface (CLI) processes commands to a computer program in the form of lines of text. The program which handles the interface is called a command-line interpreter or command-line processor. Operating systems implement a command-line interface in a shell for interactive access to operating system functions or services. Such access was primarily provided to users by computer terminals starting in the mid-1960s, and continued to be used throughout the 1970s and 1980s till today on Windows, Unix systems and personal computer systems.
 
 Source [Wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)
 
@@ -17,7 +17,7 @@ Uconv is also a CLI tool written with [Go](http://golang.org/) and [Cobra](https
 
 ### Design of uconv
 
-I want to be able to have a user experience of uconv by doing the following in the terminal
+I want to be able to create a user experience of uconv by doing the following in the terminal
 
 `uncon temperature 100 --from=c --to=k`
 
@@ -51,7 +51,8 @@ If you follow the usage guideline of Cobra, you'll find that you can bootstrap y
 
 `cobra init --pkg-name <your project directory>` like `github.com/Lumexralph/uconv`
 
-When the files and directories are created, we can proceed by working on the base command >cmd/root.go file to look like this
+When the files and directories are created, we can proceed by working on the base command `cmd/root.go` file to look like this
+
 ```
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -76,7 +77,7 @@ When you're done, run the command to install the package as an executable in you
 
 ` go install . `
 
-If all goes fine, you should be able to be able to use "uconv" in the terminal like you do with ls, pwd, grep etc... You can try it out, you should get something similar to this output, it might not be exact
+If all goes fine, you should be able to be able to use "uconv" in the terminal like you do with `ls, pwd, grep` etc... You can try it out, you should get something similar to this output, it might not be exact
 
     uconv is a CLI tool that helps you convert a value from one unit to another
         It can be used for temperature, weight, area, length, currency
@@ -95,9 +96,9 @@ If all goes fine, you should be able to be able to use "uconv" in the terminal l
 
     Use "uconv [command] --help" for more information about a command.
 
-The final interesting part is creating the temperature sub-command, add another file called whatever name you want, I will use temperature.go in the cmd directory.
+The final interesting part is creating the temperature sub-command, add another file called whatever name you want, I will use `temperature.go` in the cmd directory.
 
-Create your flags and add it it to the sub-command which in our case is temperature packaged as tempCmd
+Create your flags and add it it to the sub-command which in our case is temperature packaged as `tempCmd`
 
     var tempTo, tempFrom string
 
@@ -111,7 +112,7 @@ Create your flags and add it it to the sub-command which in our case is temperat
         rootCmd.AddCommand(tempCmd)
     }
 
-We have the tempCmd created below, it follows the same pattern as the rootCommand.
+We have the tempCmd created below, it follows the same pattern as the `rootCommand.`
 
     var tempCmd = &cobra.Command{
 	Use:   "temperature",
@@ -142,7 +143,7 @@ Short: "Convert temperature for different units", is the short description you g
 
 Args: `cobra.ExactArgs(1)`, was used because I only wanted just one value or argument provided since I just want to convert one value to another value, and the best part for me is where the logic happens
 
-Run:  executeTemperatureCmd, this will have a function with the required signature by Cobra, it will get run to respond to the temperature sub-command and since function is a first class citizen in Go, it can be passsed a value like I did.
+Run:  executeTemperatureCmd, this will have a function with the required signature by Cobra, it will get run to respond to the temperature sub-command and since function is a first class citizen in Go, it can be passed as value like I did below.
 
 This is the function definition below
 
@@ -156,7 +157,6 @@ This is the function definition below
         }
 
         switch {
-        // TODO: Make the flags caps insensitive
         case tempFrom == "c" && tempTo == "f":
             fmt.Printf("temperature: %d°C ==> %d°F\n", arg, celsiusToFahrenheit(arg))
         case tempFrom == "f" && tempTo == "c":
@@ -207,9 +207,9 @@ This is the function definition below
 Before I go, here is a cool trick I do when i want to start a new project with VSCode, I created an alias using a function like this;
 
 `alias np='function _newp(){ mkdir $1 && cd $1 && code .; };_newp'`
-    
+
 call the new command line alias like this
+
 `np uconv`
 
-If you are able to get this far, you can recreate it for other sub-commands you might have. Please ensure to consult the Cobra's guidelines if you want more to your command and I will be glad to hear from if you have any question or feedback, have fun!
-
+If you are able to get this far, you can recreate it for other sub-commands you might have. Please ensure to consult the Cobra's guidelines if you want more to your CLI tool and I will be glad to hear from you if you have any question or feedback, have fun!
