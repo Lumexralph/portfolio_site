@@ -6,7 +6,7 @@ description: "Becoming a Software Engineer"
 author: "Olumide Ogundele"
 type: "post"
 ---
-Life they say "is a journey", I am also a strong believer of that saying; I see my life as a journey and also according to one of the tech icons [Steve Jobs](https://en.wikipedia.org/wiki/Steve_Jobs) whom I learnt a lot from his story said
+Life they say "is a journey", I am also a strong believer of that saying. I see my life as a journey and also according to one of the tech icons [Steve Jobs](https://en.wikipedia.org/wiki/Steve_Jobs) whom I learnt a lot from his story said
 
 > "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something - your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life"
 
