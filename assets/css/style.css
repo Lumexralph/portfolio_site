@@ -3,7 +3,9 @@
 PROJECT: Project Name
 VERSION: Versoin Number
 -------------------------------------------------------------------*/
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
+/* @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
   font-family: bwnistaint-xbd;
@@ -14,7 +16,7 @@ VERSION: Versoin Number
 
 body {
   line-height: 1.2;
-  font-family: roboto, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c
@@ -25,7 +27,6 @@ p, ul, ol {
   color: #4c4c4c;
   font-size: 21px;
   line-height: 1.8;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: -0.004em;
 }
 
@@ -36,8 +37,9 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: playfair display, serif;
-  line-height: 1.2
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 h1,
@@ -175,6 +177,11 @@ body {
   color: #fff
 }
 
+pre {
+  font-size: large;
+  padding: 1em;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -190,7 +197,6 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
   margin: 0
 }
 
@@ -758,10 +764,7 @@ blockquote {
 
 .content strong {
   font-family: playfair display, serif;
-  font-size: 2em;
-  font-weight: 400;
   color: #000;
-  display: inherit;
   line-height: 1.5
 }
 

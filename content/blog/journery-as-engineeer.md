@@ -24,12 +24,12 @@ The journey continues for me and the direction for me now is Open Source, Site R
 
 Looking back, what could I have done better? or what advice would I give to a younger me:
 
-1. 1 .  Believe in yourself, even in doubts
+*  Believe in yourself, even in doubts
 
-2. 2 .  People will be better than you but you can learn whatever they know, they have put in the time to learn the skill/concept but you haven't
+* People will be better than you but you can learn whatever they know, they have put in the time to learn the skill/concept but you haven't
 
-3. 3 .  Just accept it that you can't learn everything, you don't even have the time to, learn as the need arises while you focus on growing
+* Just accept it that you can't learn everything, you don't even have the time to, learn as the need arises while you focus on growing
 
-4. 4 .  Always create time to sleep well, avoid burnout and take very good care of yourself, if you're not healthy, there's no chance of being productive
+* Always create time to sleep well, avoid burnout and take very good care of yourself, if you're not healthy, there's no chance of being productive
 
 If you're to advise your younger self, what would your list be like? I will be glad to hear from you about it and if you also have any question(s), I will be glad to respond, you can contact me through my email or the contact form below.
