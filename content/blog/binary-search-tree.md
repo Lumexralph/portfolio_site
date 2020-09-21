@@ -11,7 +11,7 @@ In continuation of this exciting quest to learn more about data structures and a
 
 #### Why Binary Search Trees?
 
-There are some data structures that allow fast search or flexible update, but not both. An unsorted, doubly-linked lists supports insertion in constant time `O(1)`  but search took linear time `O(n)` in the worse case. Sorted arrays support binary search which helps lookup in logarithm time `O(logn)`, but at the cost of linear-time update.
+There are some data structures that allow a fast search or flexible update, but not both. An unsorted, doubly-linked lists support insertion in constant time `O(1)`  but the search took linear time `O(n)` in the worse case. Sorted arrays support binary search which helps lookup in logarithm time `O(logn)`, but at the cost of linear-time update.
 
 Binary Search Trees will allow us to have a fast search and update in logarithm time `O(logn)` but there is a caveat to this which will be explained later when we talk about balancing a binary search tree.
 
@@ -20,11 +20,11 @@ The arrangement and balancing of the tree is done in a way that the keys of node
 #### Implementation of Binary Search Trees
 
 To create a binary search tree, we need a linked list with 2 pointers per node.
-The idea is that there is left subtree and right subtree and the node is labelled with a key. I will implement the following operations on the binary search tree: Searching, Traversal and Insertion.
+The idea is that there is a left subtree and right subtree and the node is labeled with a key. I will implement the following operations on the binary search tree: Searching, Traversal, and Insertion.
 
-The nodes of the tree have 1. left pointer 2. right pointer 3. optional parent pointer 4. data field, where we store values inserted. All the code and tests to this implementation can be found here on [github](https://github.com/Lumexralph/go-datastructures-algorithms/tree/master/dataStructures/binarySearchTree).
+The nodes of the tree have 1. left pointer 2. right pointer 3. optional parent pointer 4. data field, where we store values inserted. All the code and tests for this implementation can be found here on [github](https://github.com/Lumexralph/go-datastructures-algorithms/tree/master/dataStructures/binarySearchTree).
 
-To create a binary search tree, you will need to have a `root` where everything builds from, it can be empty or it can consist of a node together with 2 binary search trees called left and right subtrees which consists of nodes, a node (tree) which is the smallest unit and foundation of a binary search tree as shown below:
+To create a binary search tree, you will need to have a `root` where everything builds from, it can be empty or it can consist of a node together with 2 binary search trees called left and right subtrees which consist of nodes, a node (tree) which is the smallest unit and foundation of a binary search tree as shown below:
 
 ```go
     // Tree is the basic structure or node in a binary search tree.
@@ -36,7 +36,7 @@ To create a binary search tree, you will need to have a `root` where everything 
     }
 ```
 
-The parent can be a tree but in the case of a root tree, it will be empty and the left and right can also be empty which indicates we are at the end of the tree. We will model a Dictionary (collection of sorted words in ascending order) using this data structure.
+The parent can be a tree but in the case of a rooted tree, it will be empty and the left and right can also be empty which indicates we are at the end of the tree. We will model a Dictionary (collection of sorted words in ascending order) using this data structure.
 
 ```go
     // BinarySearchTree to store the words of a dictionary.
@@ -51,9 +51,9 @@ I have 2 different implementations for the insertion operation, the recursive an
 
 ##### Non-Recursive
 
-This approach is more code and a bit easier to reason about. We will starting looking going through the binary search tree from the root and then based on the item to be inserted, we have the following decision points and this also forms the concept behind the recursive approach:
+This approach is more code and a bit easier to reason about. We will start going through the binary search tree from the root and then based on the item to be inserted, we have the following decision points and this also forms the concept behind the recursive approach:
 
-* If the root is empty, insert the item there by creating a new tree, where parent, left and right subtree or children are nil.
+* If the root is empty, insert the item thereby creating a new tree, where parent, left and right subtree or children are nil.
 
 * If the item to be inserted is less than the current item in the node, we move to the left subtree and continue our search till we get to the end of the left-subtree i.e nil, then we inserted a new item there encapsulated as a new tree.
 
@@ -111,7 +111,7 @@ We needed a label on the loop because when we `break` in a switch statement, it 
 
 ##### Recursive
 
-Just as discussed above, this approach is less code but takes a little to reason about especially when you get to point where you want to attach the new tree to its parent, it follows same approach above.
+Just as discussed above, this approach is less code but takes a little to reason about especially when you get to the point where you want to attach the new tree to its parent, it follows the same approach above.
 
 ```go
     func (bt *BinarySearchTree) RecursiveInsert(currentTree **Tree, item string, parent *Tree) {
@@ -144,13 +144,13 @@ Just as discussed above, this approach is less code but takes a little to reason
 
 Attaching the new node to the tree takes constant time but the search operation that is performed before the node is attached uses a running time of `O(h)`, **h - the height of the tree**
 
-Note that the insertion here doesn’t guarantee a balanced search tree, this will be discussed in another post when I discuss the Red-Black Tree and Slay Tree which is guaranteed to be `O(logn)` in height and that applies for insertion, update and deletion, the tree responds to mutation to make it close to being balanced to  guarantee the height of the tree is always or close to `O(log n)`.
+Note that the insertion here doesn’t guarantee a balanced search tree, this will be discussed in another post when I discuss the Red-Black Tree and Slay Tree which is guaranteed to be `O(logn)` in height and that applies for insertion, update, and deletion, the tree responds to mutation to make it close to being balanced to guarantee the height of the tree is always or close to `O(log n)`.
 
-What we have so far is a random binary search tree that is good too but if the insertion goes south (which we don’t have control over the values or items inserted by the user), we can end up in a O(n) height for the tree.
+What we have so far is a random binary search tree that is good too but if the insertion goes south (which we don’t have control over the values or items inserted by the user), we can end up in O(n) height for the tree.
 
 ##### Searching
 
-It is important to label a binary search tree so that we can uniquely identify each tree using their identifier.
+It is important to label a binary search tree so that we can uniquely identify each tree using its identifier.
 
 These are the steps to consider when performing this operation:
 
@@ -161,7 +161,7 @@ These are the steps to consider when performing this operation:
 
 The search algorithm runs in `O(h)` time, where **h is the height of the binary search tree**
 
-Finding the minimum node in the tree comes with the understanding that, the leftmost subtree has the minimum item and also for maximum, the rightmost subtree has the highest item in the tree. The smallest key must reside in the left subtree of the root, since all keys in the left subtree have values less than that of the root and the largest key resides in the right subtrees since the keys in the right subtrees are higher than the root. These operations are illustrated below:
+Finding the minimum node in the tree comes with the understanding that, the leftmost subtree has the minimum item, and also for maximum, the rightmost subtree has the highest item in the tree. The smallest key must reside in the left subtree of the root since all keys in the left subtree have values less than that of the root and the largest key resides in the right subtrees since the keys in the right subtrees are higher than the root. These operations are illustrated below:
 
 Search:
 
@@ -207,11 +207,11 @@ Maximum:
 
 #### Traversal
 
-It is about visiting all the nodes in a rooted binary tree, this is a very important part of many algorithms. This is also a foundation to traversing the nodes and edges in a graph.
+It is about visiting all the nodes in a rooted binary tree, this is a very important part of many algorithms. This is also a foundation for traversing the nodes and edges in a graph.
 
-It comes with the understanding that the elements in the binary search tree are already sorted since the smallest keys are on the left of the root and largest keys are on the right of the root tree.
+It comes with the understanding that the elements in the binary search tree are already sorted since the smallest keys are on the left of the root and the largest keys are on the right of the root tree.
 
-This is achieved by using a recursive approach visiting the nodes of the tree, processing the left trees, processing the item on that tree and also visiting the right subtrees recursively. The order in which this operation is done leads to 1. In-order traversal 2. Pre-order traversal 3. Post-order traversal
+This is achieved by using a recursive approach visiting the nodes of the tree, processing the left trees, processing the item on that tree, and also visiting the right subtrees recursively. The order in which this operation is done leads to 1. In-order traversal 2. Pre-order traversal 3. Post-order traversal
 
 ##### In-order traversal:
 
@@ -225,7 +225,7 @@ Process the item in the tree first, then Traverse the left subtrees and traverse
 
 Traverse the left subtrees first, then traverse the right subtrees and then process the item in the tree.
 
-Pre-order and Post-order traversal come in handy when the binary search tree represents an arithmetic expression or a logical expression where order of operation is very important.
+Pre-order and Post-order traversal comes in handy when the binary search tree represents an arithmetic expression or a logical expression where the order of operation is very important.
 
 The running time of traversal is linear `O(n)`  because each item is visited once.
 
@@ -247,6 +247,6 @@ In-order Traversal:
 
 #### Final Thoughts
 
-> Picking the wrong data structure for the job can be disastrous in terms of performance. Identifying the very best data structure is usually not as critical, because there can be several choices that perform similarly. - Steven S. Skiena
+> Picking the wrong data structure for the job can be disastrous in terms of performance. Identifying the very best data structure is usually not as critical because there can be several choices that perform similarly. - Steven S. Skiena
 
 The problem you are trying to solve, will and should always inform the kind of data structure you use. It is a learning journey as always, I will be glad to hear from you if you have question(s) or feedback, have fun!
