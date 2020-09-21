@@ -7,7 +7,7 @@ author: "Olumide Ogundele"
 type: "post"
 ---
 
-In continuation of this exciting quest to learn more about data structures and algorithms, I will love to talk about binary search trees which builds on the knowledge last discussed on linked-list which is referenced from this [book](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202), you can find the post [here](https://lumexralph.github.io./blog/linked-list/).
+In continuation of this exciting quest to learn more about data structures and algorithms. I will love to talk about binary search trees which builds on the knowledge last discussed on linked-list which is referenced from this [book](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202), you can find the post [here](https://lumexralph.github.io./blog/linked-list/).
 
 #### Why Binary Search Trees?
 

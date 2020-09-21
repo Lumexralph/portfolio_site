@@ -7,7 +7,7 @@ author: "Olumide Ogundele"
 type: "post"
 ---
 
-From my learning about Operating Systems, diving into the source code of Linux, seeing the data structures for p_threads, mutex, sockets etc., I have grown to appreciate data structures and algorithms, they are combined to build powerful computer systems and tools. So, I want to share my learning as I resume my study on data structures and algorithms again after a while.
+From learning about Operating Systems, diving into some source code of Linux, seeing the data structures for p_threads, mutex, sockets etc. I have grown to appreciate data structures and algorithms, they are combined to build powerful computer systems and tools. So, I want to share my learning as I resume my study on data structures and algorithms again after a while.
 
 Majority of my learnings so far are attributed to this [book](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) and there are some excerpts from it too.
 
